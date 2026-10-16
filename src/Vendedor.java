@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class Vendedor extends Funcionario{
 
-public class Vendedor {
+    public Vendedor(String nome, String email, String senha) {
+        super(nome, email, senha, false);
+    }
+
+    public void RealizarVenda(int valor){
+        setVenda(getVenda() + valor);
+
+    }
+
 }
